@@ -5,14 +5,16 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 body {
-  background: url(bg.jpg);
 }
 
 .header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  background: url(bg.jpg);
+  padding-bottom: 30px;
+  .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .logo {
