@@ -20,6 +20,7 @@ module.exports = {
         loader: 'style-loader!css-loader!sass-loader'
       },
       { test: /\.jpg/, loader: 'url-loader?limit=10000' },
+      { test: /\.png/, loader: 'url-loader?limit=10000' },
       { test: /\.woff$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
       { test: /\.woff2$/, loader: "url-loader?limit=10000&minetype=application/font-woff2" },
       { test: /\.ttf$/, loader: "file-loader" },
