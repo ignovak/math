@@ -17,6 +17,7 @@
     "url-loader": "^0.5.7"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
     "extract-text-webpack-plugin": "^1.0.1",
     "jquery": "1.x.x",
