@@ -5,11 +5,11 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
 body {
-  background: url(bg.png);
+  background: url(icons/body-bg.png);
 }
 
 .header {
-  background: url(bg.jpg);
+  background: url(icons/header-bg.jpg);
   padding-bottom: 30px;
   .container {
     display: flex;
