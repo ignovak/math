@@ -1,4 +1,5 @@
 // const ExtractTextPlugin = require('extract-text-webpack-plugin')
+// const cssExtractor  = new ExtractTextPlugin('[name].css')
 
 module.exports = {
   entry: './index.js',
@@ -8,24 +9,24 @@ module.exports = {
   },
   watch: true,
   plugins: [
-    // new ExtractTextPlugin('main.css')
+    // cssExtractor
   ],
   module: {
     loaders: [
        // for watching
-      { test: /\.html/, loader: 'url-loader' },
+      { test: /\.html/, loader: 'url' },
       {
         test: /\.scss$/,
-        // loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
-        loader: 'style-loader!css-loader!sass-loader'
+        // loader: cssExtractor.extract('style', 'css!sass')
+        loader: 'style!css!sass'
       },
-      { test: /\.jpg/, loader: 'url-loader?limit=10000' },
-      { test: /\.png/, loader: 'url-loader?limit=10000' },
-      { test: /\.woff$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
-      { test: /\.woff2$/, loader: "url-loader?limit=10000&minetype=application/font-woff2" },
-      { test: /\.ttf$/, loader: "file-loader" },
-      { test: /\.eot$/, loader: "file-loader" },
-      { test: /\.svg$/, loader: "file-loader" }
+      { test: /\.jpg/, loader: 'url?limit=10000' },
+      { test: /\.png/, loader: 'url?limit=10000' },
+      { test: /\.woff$/, loader: 'url?limit=10000&minetype=application/font-woff' },
+      { test: /\.woff2$/, loader: 'url?limit=10000&minetype=application/font-woff2' },
+      { test: /\.ttf$/, loader: 'file' },
+      { test: /\.eot$/, loader: 'file' },
+      { test: /\.svg$/, loader: 'file' }
     ]
   }
 }
