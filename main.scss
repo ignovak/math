@@ -79,6 +79,16 @@ body {
   }
 }
 
+.features {
+  h4 {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 85px;
+  }
+}
+
 .footer {
   line-height: 40px;
   padding: 10px;
